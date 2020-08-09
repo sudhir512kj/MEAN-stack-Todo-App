@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend server for starkflow test solution",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.28"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudhir512kj/MEAN-stack-Todo-App.git"
+  },
+  "keywords": [
+    "starkflow",
+    "test",
+    "code",
+    "solution",
+    "nodejs",
+    "angular",
+    "mongodb"
+  ],
+  "author": "sudhir512kj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sudhir512kj/MEAN-stack-Todo-App/issues"
+  },
+  "homepage": "https://github.com/sudhir512kj/MEAN-stack-Todo-App#readme"
+}
