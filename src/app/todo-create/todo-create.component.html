@@ -13,6 +13,15 @@
         </div>
 
         <div class="form-group">
+          <label for="inputDiscription">Description</label>
+          <textarea class="form-control" formControlName="description" rows="3"></textarea>
+          <!-- error -->
+          <div class="invalid-feedback" *ngIf="submitted && myForm.description.errors?.required">
+            Description is required.
+          </div>
+        </div>
+
+        <div class="form-group">
           <button class="btn btn-success btn-lg btn-block" type="submit">Create</button>
         </div>
       </form>

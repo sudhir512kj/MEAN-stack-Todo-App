@@ -42,6 +42,7 @@ export class TodoCreateComponent implements OnInit {
       this.apiService.createTodo(this.todoForm.value).subscribe(
         (res) => {
           console.log('Todo successfully created!');
+          console.log(res);
           this.ngZone.run(() => this.router.navigateByUrl('/todos-list'));
         },
         (error) => {

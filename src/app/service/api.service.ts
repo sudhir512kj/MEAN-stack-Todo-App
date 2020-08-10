@@ -18,13 +18,13 @@ export class ApiService {
 
   // Create
   createTodo(data): Observable<any> {
-    let url = `${this.baseUri}/create`;
+    let url = `${this.baseUri}/create/`;
     return this.http.post(url, data).pipe(catchError(this.errorMgmt));
   }
 
   // Get all todos
   getTodos() {
-    return this.http.get(`${this.baseUri}`);
+    return this.http.get(`${this.baseUri}?skip=0&limit=10`);
   }
 
   // Get todo
