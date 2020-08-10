@@ -16,11 +16,8 @@
         <td scope="row">{{i+1}}</td>
         <td>{{todo.title}}</td>
         <td class="edit-block">
-          <span class="edit" [routerLink]="['/read-todo/', todo._id]">
-            <button type="button" class="btn btn-primary btn-sm">View</button>
-          </span>
           <span class="edit" [routerLink]="['/edit-todo/', todo._id]">
-            <button type="button" class="btn btn-success btn-sm">Edit</button>
+            <button type="button" class="btn btn-success btn-sm">View/Edit</button>
           </span>
           <span class="delete" (click)="removeTodo(todo, i)">
             <button type="button" class="btn btn-danger btn-sm">Delete</button>
